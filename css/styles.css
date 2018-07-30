@@ -1,0 +1,404 @@
+@font-face {
+    font-family: futurabb;
+    src: url("https://triviaplay.net/font/futurabb.ttf");
+}
+@font-face {
+    font-family: EncodeSans;
+    src: url("https://triviaplay.net/font/EncodeSansCondensed-Medium.ttf");
+}
+#wrapper{
+    width: 100%;
+    margin: auto;
+}
+#wrapper_main{
+    width: 1024px;
+    margin: 0px auto;
+    text-align: center;
+	position: relative;
+}
+.wrapper-spin{
+    margin-bottom: 52px;
+}
+.container-hr{
+	width: 80%;
+	border: 2px solid rgb(170, 150, 167);
+	margin-bottom: 57px;
+}
+h1.text {
+	font-family: futurabb;
+	font-size: 52px;
+	width: 100%;
+	padding: 0px;
+	color: #530063;
+	text-align: center;
+	text-shadow: 1px 1px 2px white;
+	margin: 20px 0px 30px;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+.clear{
+    clear: both;
+}
+/*HEADER PAGE */
+#header{
+    width: 100%;
+    padding: 0px 0px 40px;
+    background: url(../img/home_bg.png) no-repeat center top;
+    background-size: contain;
+    background-color: #180f40;
+}
+#header img{
+    width: 100%;
+}
+#header ul.menu {
+    padding: 40px 40px 20px 0px;
+    list-style-type: none;
+    float: right;
+}
+#header ul.menu  li{
+    display: inline-block;
+    margin: 0px 5px;
+}
+#header .logo-header{
+    width: 50%;
+    text-align: center;
+    margin: 0px auto;
+    clear: both;
+}
+#header .video-play {
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+#header .btn-play {
+    background: url(../img/btn-play.png) no-repeat center top;
+    background-size: contain;
+    width: 374px;
+    /* height: 82px; */
+    padding: 10px;
+    text-align: center;
+    font-size: 62px;
+    margin: 0px auto;
+    font-family: futurabb;
+}
+#header .btn-play a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 47px;
+}
+/* END */
+
+
+#container-app{
+    background: url("../img/content_bg.png") no-repeat center top;
+    background-size: cover;
+	background-color: #69b4ed;
+    width: 100%;
+	padding-bottom: 40px;
+}
+
+
+/* BLOCK SLIDE */ 
+#container-slider{
+	padding: 100px 0px;
+}
+
+#container-slider .btn_slide{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#container-slider .slick-slide {
+    margin: 0 10px;
+}
+
+#container-slider .controller_next{
+	left: -150px;
+}
+#container-slider .controller_prev{
+	right: -150px;
+}
+/* END */
+
+
+/* BLOCK SPIN */
+#container-spin .spin-image{
+    width: 40%;
+    float: left;
+}
+#container-spin .spin-content{
+    width: 55%;
+    float: right;
+    font-size: 23px;
+    line-height: 34px;
+    padding: 10px 0px;
+    text-align: left;
+    font-family: EncodeSans;
+    color: #6b6b6b;
+}
+/* END */
+
+
+
+/*  BLOCK QUESTION  */
+div.question{
+    margin: 5px 0px;
+}
+div.question button.accordion {
+    width: 74%;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 23px;
+    cursor: pointer;
+	background: transparent;
+    font-family: EncodeSans;
+}
+
+div.question button.accordion:after {
+    content: '\f055';
+    color: #0080cf;
+    font-family: "fontawesome";
+    font-size: 28px;
+    float: right;
+  }
+div.question button.accordion:before {
+    content: '\f0a9';
+    color: #0080cf;
+    font-family: "fontawesome";
+    font-size: 28px;
+    float:left;
+    margin-right: 11px;
+}
+div.question button.accordion:hover{
+    text-decoration: underline;
+}
+div.question.is-open button.accordion::after {
+    content: '\f056';
+}
+div.question button.accordion:before:hover{
+    text-decoration: none;
+    margin-top:10px;
+}
+div.question .accordion-content {
+    width: 68%;
+    margin: 0px auto;
+    padding: 11px 0px;
+    display: none;
+    line-height: 35px;
+    font-size: 20px;
+    text-align: left;
+    font-family: EncodeSans;
+}
+div.question .accordion-content .ques_play {
+    background: url(../img/btn-play.png) no-repeat center top;
+    background-size: contain;
+    width: 306px;
+    height: 48px;
+    text-align: center;
+    font-size: 39px;
+    margin: 0px auto;
+    margin-top: 13px;
+    padding: 2px;
+    text-decoration: none;
+
+}
+div.question .accordion-content .ques_play a {
+    text-decoration: none;
+    font-family: futurabb;
+    color: #fff;
+
+}
+div.question.is-open .accordion-content {
+    display: block;
+}
+div.question .button.accordion:hover, div.question button.accordion.is-open {
+    background-color: #ddd; 
+}
+/* END */
+
+/* BLOCK FOOTER */
+#footer{
+    background: url("../img/base_bg.png") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    padding: 100px 0px 40px;
+	background-color: #9777f0;
+}
+.footer-info{
+    width: 60%;
+    float: left;
+    line-height: 59px;
+    margin-top: 38px;
+}
+.footer-info h1{
+    font-size: 46px;
+    font-family: futurabb;
+    color: #fff
+}
+.footer-info p{
+    font-size: 29px;
+    color: #fff;
+    font-family: sans-serif;
+	margin-top: 20px;
+}
+.footer-info .img_socia{
+    padding-top: 18px;
+}
+.footer-info .img_socia a{
+	margin: 0px 10px;
+}
+.footer-ticat{
+    width: 40%;
+    float: right;
+}
+.footer-ticat img{
+    width: 100%;
+}
+
+/* RESPONSIVE WEBSITE */
+@media only screen and (max-width: 768px) {
+	#wrapper_main{
+		width: 90%;
+	}
+	#header{
+		padding: 0px 0px 40px;
+	}
+	/* BLOCK SLIDE */
+	/* #container-slider .btn_slide {
+		display: none;
+	} */
+	#container-spin .spin-image{
+		width: 80%;
+		margin: 0px auto;
+		float: inherit;
+	}
+	/* BLOCK SPIN */
+	#container-spin .spin-content{
+		width: 80%;
+		margin: 0px auto;
+		float: inherit;
+	}
+	/* FOOTER */
+	#footer .footer-info{
+		width: 80%;
+		margin: 0px auto;
+		float: inherit;
+	}
+	/* #footer .footer-ticat{
+		display: none;
+	} */
+}
+@media screen and (max-width: 750px) {
+    #header {
+        padding: 0px 0px 00px;
+        height: 91vw;
+    }
+    #header ul.menu {
+        padding: 13px;
+    }
+    #header ul.menu img{
+        width: 6vw;
+        border-radius: 0vw;
+    }
+    #header .logo-header{
+        width: 43vw;
+        padding-top: 0vw;
+    }
+    #header .btn-play{
+        width: 40vw;
+        font-size: 4vw;
+    }
+    #header .btn-play a {
+        font-size: 5vw;
+    }
+    #container-app{
+        height: auto
+    }
+    #header .video-play{
+        margin-bottom: 2vw;
+    }
+    #container-slider{
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+    }
+    #container-slider .slick-slide{
+        width: 22vw;
+        margin: 0.5vw;
+    }
+    #container-slider .controller_next span img, #container-slider .controller_prev span img{
+        width: 10vw;
+    }
+    #container-slider .controller_next{
+        left: -6vw;
+    }
+    #container-slider .controller_prev{
+        right: -6vw;
+    }
+    .container-hr{
+        margin-bottom: 0vw;
+    }
+    #container-spin .text{
+        font-size: 6vw;
+        margin-bottom: 3vw;
+    }
+    .spin-image img{
+        width: 58vw;
+    }
+    #container-spin .spin-content{
+        width: 100%;
+        margin: 0px auto;
+        float: inherit;
+        padding: 0vw;
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+    .wrapper-spin{
+        margin-bottom: 5vw;
+    }
+    #container-faq h1.text{
+        font-size: 5vw;
+    }
+    div.question button.accordion{
+        padding: 0vw;
+        width: 91vw;
+        font-size: 4vw;    
+    }
+    div.question.is-open .accordion-content{
+        display: block;
+        width: 92vw;
+        font-size: 4vw;
+        padding: 0vw;
+        line-height: 6vw;
+    }
+    div.question .accordion-content .ques_play{
+        width: 32vw;
+        margin-top: 3vw;
+        padding: 0vw;
+        font-size: 6vw;
+    }
+    #footer{
+        padding-top: 11vw;
+    }
+    #footer .footer-info{
+        width: 100vw;
+        margin: -4vw;
+        padding-top: 5vw;
+        line-height: 2vw;
+    }
+    .footer-info h1{
+        font-size: 6vw;
+    }
+    .footer-info p{
+        font-size: 4vw;
+    }
+    .footer-ticat{
+        width: 46%;
+        margin: 0vw auto;
+        padding-top: 5vw;
+        float: inherit;
+
+    }
+}
